@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Retirar" customModule="BIV">
+            <connections>
+                <outlet property="CLABE" destination="LcX-ck-UZr" id="rex-La-onc"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="chI-RG-m8I"/>
+                <outlet property="primero" destination="2yf-oV-y2k" id="hKw-Ab-mIF"/>
+                <outlet property="retirar" destination="Aho-ug-8CY" id="it9-6u-Lsg"/>
+                <outlet property="segundo" destination="ccf-Go-yed" id="TXa-Dn-syk"/>
+                <outlet property="textField" destination="ggJ-Oq-30J" id="lxX-j8-875"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El retiro se efectuará a la CLABE: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yf-oV-y2k">
+                    <rect key="frame" x="79.5" y="102" width="255" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012597004602374699" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-ck-UZr">
+                    <rect key="frame" x="112" y="158" width="190" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El retiro puede verse reflejado en un máximo de 24 horas hábiles." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-Go-yed">
+                    <rect key="frame" x="20" y="210" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cantidad a retirar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-Oq-30J">
+                    <rect key="frame" x="20" y="278" width="374" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-ug-8CY">
+                    <rect key="frame" x="161.5" y="332" width="91" height="35"/>
+                    <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="   Retirar    ">
+                        <color key="titleColor" red="0.08235294118" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="retirarFunc" destination="-1" eventType="touchUpInside" id="fXI-fx-EO6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.08235294118" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LcX-ck-UZr" firstAttribute="top" secondItem="2yf-oV-y2k" secondAttribute="bottom" constant="35" id="4Kq-Cb-nqV"/>
+                <constraint firstItem="Aho-ug-8CY" firstAttribute="top" secondItem="ggJ-Oq-30J" secondAttribute="bottom" constant="24" id="6xY-62-UAQ"/>
+                <constraint firstItem="ccf-Go-yed" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="J8o-Px-9V2"/>
+                <constraint firstItem="2yf-oV-y2k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LyJ-3j-FsS"/>
+                <constraint firstItem="ccf-Go-yed" firstAttribute="top" secondItem="LcX-ck-UZr" secondAttribute="bottom" constant="30" id="NdA-NH-OTd"/>
+                <constraint firstItem="ggJ-Oq-30J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PsB-Xg-VOM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ggJ-Oq-30J" secondAttribute="trailing" constant="20" id="QGv-cf-BDV"/>
+                <constraint firstItem="2yf-oV-y2k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="58" id="UIr-79-mw3"/>
+                <constraint firstAttribute="trailing" secondItem="ccf-Go-yed" secondAttribute="trailing" constant="20" id="eD2-cZ-bm8"/>
+                <constraint firstItem="ggJ-Oq-30J" firstAttribute="top" secondItem="ccf-Go-yed" secondAttribute="bottom" constant="27" id="hgJ-Ik-aIq"/>
+                <constraint firstItem="LcX-ck-UZr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oFA-Zl-k9f"/>
+                <constraint firstItem="ccf-Go-yed" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zNv-Th-CKC"/>
+                <constraint firstItem="Aho-ug-8CY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zik-DF-o83"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

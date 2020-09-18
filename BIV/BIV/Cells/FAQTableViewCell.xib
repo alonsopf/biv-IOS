@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="faqCell" rowHeight="124" id="KGk-i7-Jjw" customClass="FAQTableViewCell" customModule="BIV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faq.png" translatesAutoresizingMaskIntoConstraints="NO" id="4sK-C8-OKP">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="CdF-YM-syM"/>
+                            <constraint firstAttribute="height" constant="40" id="ChU-kY-4zk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿De qué forma puedo realizar un depósito?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-TY-heq">
+                        <rect key="frame" x="60" y="12" width="260" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solamente mediante transferencias electrónicas SPEI." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63H-Hm-XRx">
+                        <rect key="frame" x="10" y="58" width="310" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.08235294118" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="4sK-C8-OKP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6O3-OO-DBA"/>
+                    <constraint firstItem="4sK-C8-OKP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OPD-2S-kB1"/>
+                    <constraint firstItem="Ksr-TY-heq" firstAttribute="leading" secondItem="4sK-C8-OKP" secondAttribute="trailing" constant="10" id="Pe8-Dw-uqr"/>
+                    <constraint firstAttribute="trailing" secondItem="Ksr-TY-heq" secondAttribute="trailing" constant="10" id="XSs-6o-bny"/>
+                    <constraint firstItem="Ksr-TY-heq" firstAttribute="centerY" secondItem="4sK-C8-OKP" secondAttribute="centerY" id="Z7K-2T-WVz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imagen" destination="4sK-C8-OKP" id="O6R-5h-e9w"/>
+                <outlet property="pregunta" destination="Ksr-TY-heq" id="D8K-Ma-wdG"/>
+                <outlet property="respuesta" destination="63H-Hm-XRx" id="g0l-vO-A2L"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="faq.png" width="50" height="50"/>
+    </resources>
+</document>

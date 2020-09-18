@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productoCell" rowHeight="126" id="KGk-i7-Jjw" customClass="ProductosTableViewCell" customModule="BIV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cast3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1n0-6Q-ywg">
+                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="14S-qI-von"/>
+                            <constraint firstAttribute="width" constant="70" id="ezb-G8-2eQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chromecast 3ra gen. video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC7-hN-YlF">
+                        <rect key="frame" x="90" y="10" width="214" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requisitos: Nombre y dirección verificados" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OW-RF-6zf">
+                        <rect key="frame" x="90" y="41" width="214" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dim-Lj-Hbl">
+                        <rect key="frame" x="90" y="80" width="214" height="30"/>
+                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                        <state key="normal" title="Obtener por 35 puntos">
+                            <color key="titleColor" red="0.08235294118" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="adquirir" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QKb-hU-U2X"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.08235294118" green="0.078431372550000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="LC7-hN-YlF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3ud-TV-0gJ"/>
+                    <constraint firstItem="LC7-hN-YlF" firstAttribute="leading" secondItem="1n0-6Q-ywg" secondAttribute="trailing" constant="10" id="9Yc-Ox-IaT"/>
+                    <constraint firstItem="1n0-6Q-ywg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CcG-Db-Mst"/>
+                    <constraint firstItem="8OW-RF-6zf" firstAttribute="top" secondItem="LC7-hN-YlF" secondAttribute="bottom" constant="10" id="H8U-r3-SlJ"/>
+                    <constraint firstAttribute="trailing" secondItem="dim-Lj-Hbl" secondAttribute="trailing" constant="10" id="ICT-LM-Q66"/>
+                    <constraint firstItem="8OW-RF-6zf" firstAttribute="leading" secondItem="1n0-6Q-ywg" secondAttribute="trailing" constant="10" id="Ktr-rk-evR"/>
+                    <constraint firstItem="1n0-6Q-ywg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="R0n-Lp-9Mv"/>
+                    <constraint firstAttribute="trailing" secondItem="8OW-RF-6zf" secondAttribute="trailing" constant="10" id="XyX-Za-Czf"/>
+                    <constraint firstAttribute="trailing" secondItem="LC7-hN-YlF" secondAttribute="trailing" constant="10" id="dYa-9K-xdw"/>
+                    <constraint firstItem="dim-Lj-Hbl" firstAttribute="top" secondItem="8OW-RF-6zf" secondAttribute="bottom" constant="10" id="t1I-pF-BQD"/>
+                    <constraint firstItem="dim-Lj-Hbl" firstAttribute="leading" secondItem="1n0-6Q-ywg" secondAttribute="trailing" constant="10" id="uvF-UV-Lbb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boton" destination="dim-Lj-Hbl" id="0an-jQ-2HY"/>
+                <outlet property="imagen" destination="1n0-6Q-ywg" id="Q79-8t-B1h"/>
+                <outlet property="requisitos" destination="8OW-RF-6zf" id="Yg1-ci-fGK"/>
+                <outlet property="titulo" destination="LC7-hN-YlF" id="X6Y-1e-fth"/>
+            </connections>
+            <point key="canvasLocation" x="43.478260869565219" y="95.089285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cast3.jpg" width="1000" height="1000"/>
+    </resources>
+</document>
